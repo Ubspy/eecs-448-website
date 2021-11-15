@@ -1,0 +1,37 @@
+#validator
+{
+    background-color: #D7ECFA; 
+    padding: 2rem;
+}
+
+#profile
+{
+    background-color: #d2a679;
+    padding: 1rem;
+}
+
+body
+{
+    background-image: url('../images/barrel.png') !important;
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+
+}
+
+.section
+{
+    background-color: #D7ECFA; 
+    padding: 2rem;
+}
+
+.section-title
+{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}

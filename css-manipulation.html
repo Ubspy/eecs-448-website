@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Manipulation</title>
+    <link rel="stylesheet" href="css/shiny.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="callout">
+        <div style="text-align: center;">
+            <h1>CSS Manipulation</h1>
+        </div> 
+    </div>
+    <div class="grid-container fluid">
+        <div class="grid-x">
+            <!-- Padding to center the text -->
+            <div class="cell large-auto medium-auto"></div>
+
+            <div class="cell large-6 medium-8">
+                <div id="nft-div" style="padding: 2rem;">
+                    <p>You think it’s funny to take screenshots of people’s NFTs, huh? You must be a very immature person to steal someone’s property that they PAID for.
+                        Yeah, I said it. You’re the kind of person who thinks that property theft (a seriously illegal offence) is a joke.
+                        I don’t even know why you took that screenshot, because you didn’t pay 1000 dollars for it. I did. The blockchain doesn’t lie.
+                        Even if you try to save it, it’s my property. You’re just angry that you couldn’t afford this priceless masterpiece.
+                        Even if you could, your fingers couldn’t even click fast enough to get one of the 10000 NFTs sold. You’re just mad you don’t own what I own.
+                        So, delete that screenshot, or I swear, you’ll be hearing from my lawyers.</p>
+                    
+                    <form>
+                        <label>
+                            Border Color:
+                            <select id="border-color-select">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </label>
+                        
+                        <label>
+                            Border width:
+                            <input id="border-width" type="number" value="1">
+                        </label> 
+
+                        <label>
+                            Background Color:
+                            <select id="background-color-select">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </label>
+                        
+                        <button id="manipulate-button" type="button" class="button">
+                            Manipulate 
+                        </button>
+
+                    </form>
+                </div> 
+            </div>
+
+            <!-- Padding to center the text -->
+            <div class="cell large-auto medium-auto"></div>
+        </div> 
+    </div>
+
+    <!-- Import JS files -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/css-manipulator.js"></script>
+
+    <!-- Initiialize foundation JS -->
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
