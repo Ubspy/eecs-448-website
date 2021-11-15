@@ -10,19 +10,6 @@
     padding: 1rem;
 }
 
-body
-{
-    background-image: url('../images/barrel.png') !important;
-
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed !important;
-    background-position: center !important;
-
-}
-
 .section
 {
     background-color: #D7ECFA; 
