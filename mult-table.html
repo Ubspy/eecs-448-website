@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/shiny.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="callout">
+        <div style="text-align: center;">
+            <h1>Multiplication Table</h1>
+        </div> 
+    </div>
+    <div class="grid-container fluid">
+        <div class="grid-x">
+            <!-- Padding to center the password validator -->
+            <div class="cell large-auto medium-auto"></div>
+
+            <div class="cell large-6 medium-8">
+                <div id="validator" style="overflow: scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1</strong></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2</strong></td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3</strong></td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4</strong></td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+
+            <!-- Padding to center the password validator -->
+            <div class="cell large-auto medium-auto"></div>
+        </div> 
+    </div>
+
+    <!-- Import JS files -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/validator.js"></script>
+
+    <!-- Initiialize foundation JS -->
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
