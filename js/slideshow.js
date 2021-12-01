@@ -31,10 +31,10 @@ $(document).ready(() =>
     });
 });
 
-$(document).resize(() =>
+window.onresize = () =>
 {
     resizeImage();
-});
+};
 
 function resizeImage()
 {
