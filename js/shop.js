@@ -34,6 +34,11 @@ function validateForm()
     {
         $('#validate-text').text('Please provide a password!');
     }
+    // Check for shipping option
+    else if($('input[name=shipping]:checked', '#orderForm').val() === undefined)
+    {
+        $('#validate-text').text('Please select a shipping option!');
+    }
     // Submit form if valid
     else
     {

@@ -38,7 +38,7 @@
 
             <div class="cell large-8 medium-10">
                 <div class="content" style="padding: 3rem">
-                    <form id="orderForm">
+                    <form id="orderForm" method="POST" action="store.php">
                         <div class="grid-x grid-margin-x align-bottom small-up-1 medium-up-2 large-up-4">
                             <div class="cell text-centered small-centered">
                                 <h4 class="item">Richard</h4>
@@ -46,7 +46,7 @@
                                 <p>Price: $35.00</p>
                                 <label>
                                     Quantity:
-                                    <input type="number" value="0">
+                                    <input name="richard-1" type="number" value="0">
                                 </label>
                             </div>
                             <div class="cell text-centered small-centered">
@@ -55,7 +55,7 @@
                                 <p>Price: $20.00</p>
                                 <label>
                                     Quantity:
-                                    <input type="number" value="0">
+                                    <input name="richard-2" type="number" value="0">
                                 </label>
                             </div>
                             <div class="cell text-centered small-centered">
@@ -64,7 +64,7 @@
                                 <p>Price: $625.00</p>
                                 <label>
                                     Quantity:
-                                    <input type="number" value="0">
+                                    <input name="richard-3" type="number" value="0">
                                 </label>
                             </div>
                             <div class="cell text-centered small-centered">
@@ -73,7 +73,7 @@
                                 <p>Price: $140.00</p>
                                 <label>
                                     Quantity:
-                                    <input type="number" value="0">
+                                    <input name="richard-4" type="number" value="0">
                                 </label>
                             </div>
                         </div>
@@ -93,10 +93,10 @@
                         <div class="grid-x" style="padding-top: 1rem">
                             <div class="cell small-auto small-centered text-center">
                                 <label>Username
-                                    <input type="text" id="username" placeholder="something@domain.com">
+                                    <input type="text" id="username" name="username" placeholder="something@domain.com">
                                 </label>
                                 <label>Password
-                                    <input type="text" id="password" placeholder="password">
+                                    <input type="password" id="password" name="password" placeholder="password">
                                 </label>
                             </div>
                         </div>
