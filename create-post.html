@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="css/shiny.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="callout">
+        <div style="text-align: center;">
+            <h1>New Post</h1>
+        </div> 
+    </div>
+    <div class="grid-container fluid">
+        <div class="grid-x">
+            <!-- Padding to center the password validator -->
+            <div class="cell large-auto medium-auto"></div>
+
+            <div class="cell large-6 medium-8">
+                <div id="validator">
+                    <form action="create-user.php">
+                        <p>Post:<p>
+                        <textarea type="text" name="post-text" id="post-text" cols="80" rows"5"></textarea>
+
+                        <div class="grid-x">
+                            <div class="cell auto"></div>
+                            <div class="cell small-2 small-centered text-center">
+                                <button id="validate-button" type="submit" class="button">
+                                    Sign Up 
+                                </button>
+                            </div>
+                            <div class="cell auto"></div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+
+            <!-- Padding to center the password validator -->
+            <div class="cell large-auto medium-auto"></div>
+        </div> 
+    </div>
+
+    <!-- Import JS files -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Initiialize foundation JS -->
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
