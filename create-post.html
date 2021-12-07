@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
+<style>
+
+#validate-text
+{
+	text-align: center;
+	color: red;
+}
+
+</style>
+
 <body>
     <div class="callout">
         <div style="text-align: center;">
@@ -22,15 +33,20 @@
 
             <div class="cell large-6 medium-8">
                 <div id="validator">
-                    <form action="create-user.php">
+                    <form>
+			<p>Username:</p>
+			<input type="text" name="username" id="username">
+
                         <p>Post:<p>
                         <textarea type="text" name="post-text" id="post-text" cols="80" rows"5"></textarea>
+
+			<p id="validate-text"></p>
 
                         <div class="grid-x">
                             <div class="cell auto"></div>
                             <div class="cell small-2 small-centered text-center">
-                                <button id="validate-button" type="submit" class="button">
-                                    Sign Up 
+                                <button id="post-button" type="button" class="button">
+                                    Post 
                                 </button>
                             </div>
                             <div class="cell auto"></div>
@@ -49,6 +65,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/createPost.js"></script>
 
     <!-- Initiialize foundation JS -->
     <script>
